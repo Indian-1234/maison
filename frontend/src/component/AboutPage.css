@@ -1,0 +1,13 @@
+.simages{
+    width:"480px";
+    height:"200px"
+}
+@media (max-width: 576px) {
+    .simages{
+        width: 100px;
+        height: 50px;
+    }
+}
+.scroll{
+    width: '480px';height:'200px';border-radius:'200px';margin-top:'15px'
+}

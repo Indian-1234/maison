@@ -1,0 +1,39 @@
+import React, { useState, useEffect } from 'react';
+
+function Ga() {
+  const [userData, setUserData] = useState([]);
+
+  useEffect(() => {
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    const gets = users.find(u => u.email == 'indi@gmail.com');
+    
+    setUserData([gets]);
+    // alert(gets.name)
+  }, []);
+  
+
+  return (
+    <div>
+      <h1>User Data:</h1>
+        <ul>
+          {userData.map((item) => (
+            
+              <ul>
+                <div key={item.email}>
+                <li>Name: {item.password}</li>
+                <li>Name: {item.name}</li>
+
+                </div>
+              </ul>
+            
+          ))}
+        </ul>
+      {/* : (
+        <p>No user data found</p>
+      ) */}
+    </div>
+  );
+}
+
+
+export default Ga;

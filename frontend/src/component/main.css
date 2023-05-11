@@ -1,0 +1,86 @@
+.places {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+ .places div{
+    margin-left: 70px;
+  }
+  .place {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    width: 300px;
+  }
+  
+  .place:focus {
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 5px #ccc;
+  }
+  body{
+    background-color: rgb(221, 206, 206);
+  }
+  #hp {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  #hp:hover{
+    transform: scale(1.05);
+  }
+  footer {
+    background-color: #131212;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10px !important;
+    color: rgb(252, 251, 250);
+  }
+  footer p{
+    margin-top: 0px;
+  }
+  form{
+    margin-top: 5%;
+}
+
+#hp  {
+    float: left;    
+    margin-left: 70px; 
+     margin-top: 3%;
+     align-items: center;
+    }
+    .ant-menu-horizontal {
+        width: 100%; /* or your desired width */
+        z-index: 1; /* or higher than other elements if needed */
+        position: fixed;
+        display: flex;
+    }
+    @media (max-width: 576px) {
+      #hp{
+        margin-left: 25px;
+      }
+      .places {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 60px;
+      }
+      .place {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f5f5f5;
+        color: #333;
+        margin-top: 10px;
+        width: 170px;
+        margin-left: 0px;
+      }
+    }
